@@ -1,7 +1,7 @@
-const btnUpdate = document.getElementById('btn-main');
+const btnUpdate = document.querySelector('.btn-main');
 const headline = document.getElementById('headline');
-const items = document.getElementsByTagName('li');
-const highlights = document.getElementsByClassName('highlight');
+const items = document.querySelectorAll('li');
+const highlights = document.querySelectorAll('.highlight');
 
 for ( const highlight of highlights ) {
   highlight.style.backgroundColor = 'cornsilk';
