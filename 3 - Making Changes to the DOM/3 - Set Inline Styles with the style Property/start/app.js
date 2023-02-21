@@ -12,5 +12,12 @@ btnUpdate.addEventListener('click', () => {
 
 btnToggle.addEventListener('click', () => {
   const listContainer = document.querySelector('.list-container');
-  listContainer.style.display = 'none';
-})
+
+  if (listContainer.style.display === 'none') {
+    btnToggle.textContent = 'Hide List';
+    listContainer.removeAttribute('style');
+  } else {
+    btnToggle.textContent = 'Show List';
+    listContainer.style.display = 'none';
+  }
+});
