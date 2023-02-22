@@ -3,11 +3,13 @@ const btnToggle = document.querySelector('.btn-toggle');
 
 btnCreate.addEventListener('click', () => {												 
   const input = document.querySelector('.input-main');
-	const item = document.createElement('li');
+  const list = document.querySelector('ul');
+  const item = document.createElement('li');
 
 	item.textContent = input.value;
 	console.log(item)
   input.value = '';
+  list.prepend(item);
 });
 
 btnToggle.addEventListener('click', () => {
